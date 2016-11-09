@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "SAP Support Note QuickLaunch",
   "author": "Mitchell Barry",
-  "version": "1.0.0.0",
+  "version": "1.1.0.0",
   "description": "Quickly launch SAP Support to view or search for notes",
   "background": {
     "scripts": ["main.js"]
