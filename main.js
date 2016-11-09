@@ -14,8 +14,8 @@ Copyright 2014 Mitchell Barry
    limitations under the License.
 */
 
-var note_url = "http://service.sap.com/sap/support/notes/";
-var search_url = "https://support.sap.com/content/sap-root/search-result-page.html?search=";
+var note_url = "https://launchpad.support.sap.com/#/notes/";
+var search_url = "https://launchpad.support.sap.com/#/solutions/notes/?q=";
 
 var searchButton = document.getElementById('btnSearch');
 var noteInput = document.getElementById("note");
@@ -36,7 +36,7 @@ function openNote(noteNumber) {
 function search(searchText) {
   var terms = encodeURIComponent(searchText);
   chrome.tabs.create({
-    url: search_url + terms + "&_charset=UTF-8"
+    url: search_url + terms
   });
 }
 
